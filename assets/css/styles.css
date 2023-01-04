@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  max-width: 950px;
+  max-height: 550px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.3);
+}
+main .card .illustrations-container {
+  width: 50%;
+  position: relative;
+}
+main .card .illustrations-container .illustration-box {
+  position: absolute;
+  left: -92px;
+  top: 220px;
+  z-index: 20;
+}
+main .card .illustrations-container .illustration {
+  position: relative;
+  width: 475px;
+  height: 550px;
+  overflow: hidden;
+}
+main .card .illustrations-container .illustration .illustration-woman {
+  position: absolute;
+  width: 100%;
+  left: -85px;
+  top: 90px;
+  z-index: 19;
+}
+main .card .illustrations-container .illustration .illustration-pattern {
+  position: absolute;
+  top: -300px;
+  left: -550px;
+}
+main .card .faq-topics--container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .card .faq-topics--container .faq-topic {
+  padding-right: 70px;
+  padding-top: 70px;
+}
+main .card .faq-topics--container .faq-topic h1 {
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 30px;
+}
+main .card .faq-topics--container .faq-topic .topics {
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+  padding-bottom: 5px;
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  cursor: pointer;
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title .bold {
+  font-weight: 700;
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title .rotate {
+  transform: rotate(180deg);
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title button .arrows {
+  transform: rotate(0deg);
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title button .rotate {
+  transform: rotate(180deg);
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title button p:hover {
+  transition: all 0.1s ease-in-out;
+  color: hsl(14deg, 88%, 65%);
+}
+main .card .faq-topics--container .faq-topic .topics .topics-title button .bold {
+  font-weight: 700;
+}
+main .card .faq-topics--container .faq-topic .topics p {
+  color: hsl(237deg, 12%, 33%);
+  line-height: 3.4rem;
+  font-size: 16px;
+}
+main .card .faq-topics--container .faq-topic .topics .hidden {
+  display: none;
+}
+main .card .faq-topics--container .faq-topic .active .hidden {
+  display: block;
+  color: hsl(240deg, 6%, 50%);
+}
+main .card .faq-topics--container .faq-topic .topics:is(.active) p:nth-of-type(1) {
+  font-weight: 700;
+}
+main .card .faq-topics--container .faq-topic .topics:is(.active) img.arrow {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=styles.css.map */
